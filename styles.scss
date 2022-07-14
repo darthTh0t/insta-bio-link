@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin center-btn {
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+@mixin center-btn-el {
+  padding: 3px 3rem;
+  width: 18.5rem;
+}
+
+body {
+  background-image: url();
+  .container {
+    border: 2px solid rgb(10%, 10%, 10%);
+    width: 20rem;
+    margin: 4rem auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .top-image {
+      padding-top: 1rem;
+      padding-left: 4rem;
+      padding-bottom: 1rem;
+      img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 5rem;
+      }
+    }
+    .link-tree {
+      width: 18.5rem;
+      .fiverr{
+        @include center-btn;
+        .fiverr-btn{
+          @include center-btn-el;
+        }
+      }
+      .clubhouse{
+        @include center-btn;
+        .clubhouse-btn{
+          @include center-btn-el;
+        }
+      }
+      .linkedin{
+        @include center-btn;
+        .linkedin-btn{
+          @include center-btn-el;
+        }
+      }
+      .instagram{
+        @include center-btn;
+        .instagram-btn{
+          @include center-btn-el;
+        }
+      }
+    }
+  }
+}
